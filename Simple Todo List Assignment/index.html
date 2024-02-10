@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mood-container">
+        <div class="mood-selection">
+            <h1>Select Your Mood</h1>
+            <div class="mood-button">
+                <button id="blue"><i class="bx bxs-circle"></i></button>
+                <button id="yellow"><i class="bx bxs-circle"></i></button>
+                <button id="red"><i class="bx bxs-circle"></i></button>
+                <button id="green"><i class="bx bxs-circle"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather-box">
+        <div class="search-box">
+            <input type="text" placeholder="Where Are You?" id="location" spellcheck="false" />
+            <button><i class="bx bxs-home-alt-2"></i></button>
+            <h1 class="city"></h1>
+            <h2 class="temp"></h2>
+            <h2 class="humidity"></h2>
+        </div>
+    </div>
+    </div>
+
+    <div class="todo-list-container">
+        <div class="top-container">
+            <h2 class="header-text">
+                To Do List<i class="bx bxs-book-content"></i>
+            </h2>
+            <div class="task-box">
+                <input type="text" id="input-box" placeholder="add your task" />
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

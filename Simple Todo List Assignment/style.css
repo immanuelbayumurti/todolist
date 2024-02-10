@@ -1,0 +1,211 @@
+:root {
+  --primary-color: rgb(239, 230, 221);
+  --green-theme: rgb(42, 189, 62);
+  --red-theme: rgb(212, 58, 130);
+  --blue-theme: rgb(52, 132, 207);
+  --yellow-theme: rgb(231, 159, 87);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--green-theme);
+}
+
+.mood-container {
+  margin: 100px auto 20px;
+}
+
+.mood-selection {
+  padding: 5px;
+  text-align: center;
+}
+
+.mood selection h1 {
+  text-align: center;
+  padding: 5px;
+}
+
+.mood-button {
+  letter-spacing: 60px;
+}
+
+.mood-button button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.mood-button button i:hover {
+  transform: translateY(-4px);
+}
+
+.mood-button button i {
+  font-size: x-large;
+}
+
+button:nth-child(1) {
+  color: var(--blue-theme);
+}
+
+button:nth-child(2) {
+  color: var(--yellow-theme);
+}
+
+button:nth-child(3) {
+  color: var(--red-theme);
+}
+
+button:nth-child(4) {
+  color: var(--green-theme);
+}
+
+.weather-box {
+  width: 100%;
+  height: 100%;
+  padding: 4px 20px 40px 20px;
+}
+
+.weather-box .search-box {
+  width: 300px;
+  margin: auto;
+}
+
+.weather-box .search-box input {
+  margin-left: 5px;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: var(--green-theme);
+}
+
+.weather-box .search-box ::placeholder {
+  color: var(--green-theme);
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+.weather-box .search-box button {
+  margin-left: 0;
+}
+
+.weather-box .search-box img {
+  color: var(--green-theme);
+  background-color: var(--green-theme);
+}
+
+.todo-list-container {
+  width: 100%;
+  height: 100%;
+  padding: 4px 20px 40px 20px;
+}
+
+.top-container {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 30rem;
+  height: 100%;
+  padding: 4px 20px 40px 20px;
+}
+
+.header-text i {
+  margin-left: 10px;
+}
+
+.task-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0c8c8;
+  border-radius: 30px;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.task-box ::placeholder {
+  color: var(--green-theme);
+}
+
+.task-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  color: var(--green-theme);
+  font-weight: 600;
+  font-size: larger;
+}
+
+.task-box button {
+  color: var(--primary-color);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 16px 50px;
+  background: #f99e9e;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 8px 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/checkbox-regular-36.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: var(--green-theme);
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checkbox-checked-regular-36.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  color: #f99e9e;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background-color: #f99e9e;
+  color: #f0c8c8;
+}
